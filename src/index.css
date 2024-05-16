@@ -129,3 +129,8 @@ button {
 .forecast-details {
     text-align: center;
 }
+
+.forecast-details img {
+    background-color: rgba(239, 239, 240, .8);
+    border-radius: 50%;
+}
