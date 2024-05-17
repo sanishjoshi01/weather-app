@@ -18,8 +18,7 @@ function SearchLocation({ onSubmit }) {
     return (
         <div className="form">
             <form onSubmit={handleFormSubmit}>
-                <label>Enter a region or country name: </label><br />
-                <input type="text" onChange={handleChange} />
+                <input type="text" onChange={handleChange} placeholder="Search country or region" />
                 <button>Go</button>
             </form>
         </div >
