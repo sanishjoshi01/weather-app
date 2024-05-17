@@ -1,4 +1,5 @@
 function Forecast({ forecastData, title }) {
+    console.log(forecastData);
 
     const renderedForecast = Object.keys(forecastData).map(date => {
         const monthDay = forecastData[date].forecast.forecastday[0].date.slice(5);
@@ -6,7 +7,7 @@ function Forecast({ forecastData, title }) {
             <div className="forecast-details">
                 <img src={forecastData[date].forecast.forecastday[0].day.condition.icon} alt="icon"></img>
                 <div>{monthDay}</div>
-                <div>{forecastData[date].forecast.forecastday[0].day.condition.text}</div>
+                <div>{forecastData[date].forecast.forecastday[0].day.avgtemp_c}°</div>
             </div>
         );
     });
